@@ -1,0 +1,10 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .button{
+    background-color: #171c7f;
+    color: white;
+  }
+  img{
+    max-width: 30%;
+  }

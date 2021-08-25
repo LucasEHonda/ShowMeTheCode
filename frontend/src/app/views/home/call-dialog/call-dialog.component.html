@@ -1,0 +1,47 @@
+
+<div class="content">      
+  <div id="login">
+    <form class="example-form" [formGroup]="callForm"> 
+      <h1>Nova Call</h1> 
+      
+      <p>
+        <label>Origem</label>
+          <mat-select class="select" formControlName="origin" name="origin">
+            <mat-option value="011">011</mat-option>
+            <mat-option value="016">016</mat-option>
+            <mat-option value="017">017</mat-option>
+            <mat-option value="018">018</mat-option>
+        </mat-select>
+      </p>
+        
+      <p>
+        <label>Destino</label>
+          <mat-select class="select" formControlName="destiny" name="destiny">
+            <mat-option value="011">011</mat-option>
+            <mat-option value="016">016</mat-option>
+            <mat-option value="017">017</mat-option>
+            <mat-option value="018">018</mat-option>
+        </mat-select>
+      </p>
+        
+      <p>
+        <label>Plano desejado</label>
+          <mat-select class="select" formControlName="plan" name="plan">
+            <mat-option value="">Padrão</mat-option>
+            <mat-option value="talk_more_low">Falemais30</mat-option>
+            <mat-option value="talk_more_medium">Falemais60</mat-option>
+            <mat-option value="talk_more_high">Falemais120</mat-option>
+        </mat-select>
+      </p>
+      <p>
+        <label>Minutos</label> <br>
+          <input formControlName="minutes" class="minute" type="number" name="minutes">
+      </p>
+        
+    </form>
+    
+    <div mat-dialog-actions>
+      <button mat-raised-button style="background-color: #171c7f; color: white;" (click)="createCall()">Adicionar</button>
+      <button mat-button (click)="cancel()">Cancelar</button>
+    </div>
+  </div>

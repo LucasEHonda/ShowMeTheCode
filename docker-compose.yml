@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  
+  django:
+    hostname: django
+    build:
+      context: ./backend
+    image: vizir_backend
+    ports:
+      - "8000:8000"
+    restart: on-failure
+    network_mode: bridge
+
+  frontend:
+    build:
+      context: ./frontend
+    image: vizir_frontend
+    ports:
+      - "4200:4200"
+    network_mode: bridge
+    links: 
+      - 'django'

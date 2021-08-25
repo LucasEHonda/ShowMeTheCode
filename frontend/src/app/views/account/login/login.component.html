@@ -1,0 +1,26 @@
+<div class="container" >
+    <div class="content">      
+      <div id="login">
+        <form (ngSubmit)="onSubmit()" #form="ngForm"> 
+          <h1>Login</h1> 
+          <p> 
+            <label for="nome_login">Seu nome</label>
+            <input id="nome_login" type="email" name="email" id="email" [(ngModel)]="login.email" placeholder="candidato@vizir.com" required />
+          </p>
+           
+          <p> 
+            <label for="email_login">Senha</label> 
+            <input id="email_login" type="password" name="password" id="password" [(ngModel)]="login.password" placeholder="*****" required />
+          </p>
+           
+          <p> 
+            <button type="submit" class="btn btn-primary btn-block" [disabled]="form.form.invalid">Entrar</button>
+          </p>
+           
+          <p class="link">
+            Ainda não tem conta?
+            <button type="button" [routerLink]="['/create-account']">Criar conta</button>
+          </p>
+        </form>
+      </div>
+</div> ''
