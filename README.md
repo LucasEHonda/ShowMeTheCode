@@ -2,7 +2,7 @@
 
 ## TELZIR
 
-Este repositório representa o desafio "TELZIR" da vizir.
+Este repositório representa o desafio "TELZIR" da [VIZIR](https://vizir.com.br/en/).
 
 ### Pré-requisitos
 Caso você tenha `DOCKER` instalado você so precisa rodar o comando `docker-compose up --build` na raiz do projeto.
